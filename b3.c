@@ -1,6 +1,6 @@
-//dijstra's algorithm
+
 #include "stdio.h"
-//#include "conio.h"
+
 #define infinity 999
 void dij(int n,int v,int cost[10][10],int dist[])
 {
@@ -16,7 +16,7 @@ void dij(int n,int v,int cost[10][10],int dist[])
 			if(dist[w]<min && !flag[w])
 				min=dist[w],u=w;
 			}
-		//printf("u = %d",u);
+		
 		flag[u]=1;
 		count++;
 		for(w=1;w<=n;w++)
